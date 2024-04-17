@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap");
+* {
+	font-family: "Josefin Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+div#container {
+	/* background-color: #f0fff0; */
+	/* background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500); */
+	/* background-image: radial-gradient(
+		circle farthest-corner at 10% 20%,
+		rgba(255, 209, 67, 1) 0%,
+		rgba(255, 145, 83, 1) 90%
+	); */
+	background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+	color: #002244;
+	text-align: center;
+	height: 100vh;
+	/* height: 700px; */
+	padding-top: 2px;
+	/* display: flex;
+	align-items: center;
+	justify-content: center; */
+}
+input,
+select,
+table {
+	font-size: 20px;
+	margin-top: 10px;
+}
+span {
+	color: purple;
+	font-weight: bold;
+}
+input,
+#countries {
+	height: 30px;
+}
+input {
+	width: 200px;
+}
+
+#countries {
+	width: 300px;
+}
+table {
+	text-align: center;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+.mcontainer {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.mcountries {
+	/* margin-bottom: 8rem; */
+	display: flex;
+
+	font-size: 1.5rem;
+	opacity: 0;
+	transition: opacity 1s;
+}
+.mcountry {
+	background-color: #fff;
+	box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+	font-size: 1.5rem;
+	width: 22rem;
+	border-radius: 0.7rem;
+	margin: 0 1rem;
+	/* overflow: hidden; */
+}
+.country__img {
+	width: 22rem;
+	height: 10rem;
+	object-fit: cover;
+	background-color: #eee;
+	border-top-left-radius: 0.7rem;
+	border-top-right-radius: 0.7rem;
+}
+
+.country__data {
+	padding: 0.5rem 2.75rem 2rem 2.75rem;
+}
+
+.country__name {
+	font-size: 1.9rem;
+	margin-bottom: 0.7rem;
+}
+
+.country__region {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	color: #888;
+}
+
+.country__row {
+	margin-bottom: 0.5rem;
+}
+
+.country__row span {
+	display: inline-block;
+	/* margin-right: 1rem; */
+	font-size: 2.4rem;
+}
+#s1 {
+	text-align: left;
+}
+.country_details {
+	text-align: left;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>The Country Details App</title>
+	</head>
+	<body>
+		<div id="container">
+			<h1>The Country Details App</h1>
+			<input
+				type="button"
+				value="Load Countries"
+				onclick="loadCountries()"
+			/><br />
+			<select id="countries" onchange="showDetails()"></select>
+			<br /><br />
+			<main class="mcontainer">
+				<div class="mcountries"></div>
+			</main>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
